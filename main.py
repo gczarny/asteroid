@@ -13,6 +13,8 @@ def main():
     _clock = time.Clock()
     dt = 0
     player = Player(x = SCREEN_WIDTH / 2, y = SCREEN_HEIGHT / 2)
+    my_group = pygame.sprite.Group()
+
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
